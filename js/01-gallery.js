@@ -34,9 +34,9 @@ const handleGalleryClick = event => {
     return;
   }
 
-  const url = event.target.dataset.source;
+  const urlOriginal = event.target.dataset.source;
   // create new basicLightbox instance
-  const instance = basicLightbox.create(`<img src="${url}">`);
+  const instance = basicLightbox.create(`<img src="${urlOriginal}">`);
   instance.show();
 
   // handleOnEscKeyPress
