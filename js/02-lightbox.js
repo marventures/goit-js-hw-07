@@ -21,6 +21,6 @@ const photosMarkup = createGallery(galleryItems);
 galleryList.insertAdjacentHTML('beforeend', photosMarkup);
 
 // --------------------------------------------------------------
-const lightbox = new SimpleLightbox('.gallery a', { captionsData: 'alt', captionDelay: 250 });
+const gallery = new SimpleLightbox('.gallery a', { captionsData: 'alt', captionDelay: 250 });
 
-lightbox.on('show.simplelightbox');
+gallery.on('show.simplelightbox');
